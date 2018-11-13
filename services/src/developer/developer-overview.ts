@@ -15,10 +15,6 @@ export class DeveloperOverview {
   // this will be shared with all subcomponents
   public state: DeveloperState;
 
-  public loadAllDevs = dispatchify(loadAllDevs);
-  public loadJuniorDevs = dispatchify(loadJuniorDevs);
-  public loadProDevs = dispatchify(loadProDevs);
-
   // inject the store, alternatively you can still inject the service and do it the old-school way
   constructor(private store: Store<DeveloperState>) {
     // register the actions
